@@ -1,0 +1,38 @@
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class='row'>
+    <div class='col-md-12 text-center'>
+        <h2>Lowest Price Found: <strong>£9.99</strong></h2>
+        <br />
+    </div>
+</div>
+
+<div class='row'>
+    <div class='col-md-12 text-center'>
+        <img src='/images/facebook.jpg' style='max-height: 40px'>
+    </div>
+</div>
+
+<br />
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <form role="form" asp-action='Register'>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Street">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="City">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Postcode">
+            </div>
+            <button type="submit" class="btn btn-default">Continue</button>
+        </form>
+    </div>
+</div>
