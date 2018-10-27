@@ -1,0 +1,6 @@
+user_id,postcode,home_owner,price
+test_user_1@test.com,L35 7LS,1,250000
+test_user_2@test.com,M3 7FE,0,363500
+test_user_3@test.com,SK5 6TY,0,309000
+test_user_4@test.com,M4 1AB,1,295000
+test_user_5@test.com,M4 4AX,1,180000
