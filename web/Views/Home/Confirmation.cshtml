@@ -1,9 +1,10 @@
+@model DataResults
 @{
     ViewData["Title"] = "Confirmation";
 }
 <div class="row">
     <div class="col-md-12 text-center">
-        <h1>Congratulations Mr Anderson!</h1>
+        <h1>Congratulations @Model.Name</h1>
         <h4>You are on the way to your nightmare holiday!</h4>
     </div>
 </div>
@@ -18,6 +19,8 @@
     <div class="col-md-12 text-center">
         <h2>We have allocated you in the:</h2>
         <br>
-        <h1>Quiet Zone</h1>
+        <h1>@Model.Zone</h1>
+		<h2>because.....</h2>
+		<h2>@Model.Message</h2>
     </div>
 </div>

@@ -6,5 +6,6 @@ namespace web.Models
         public string From { get; set; }
         public string To { get; set; }
         public string firstNameInput {get;set;}
+        public string lastNameInput { get; set; }
     }
 }

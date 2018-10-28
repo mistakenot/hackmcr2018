@@ -29,10 +29,23 @@ namespace web.Controllers
 
         public IActionResult Register(RegisterModel model)
         {
+            string[] zones = { "Unsociable", "Third-Class", "First-Class", "Sick", "Noisy" };
+            string[] messages = {
+                "You like people",
+                "You are too rich",
+                "You spend too little",
+                "You look after yourself too much",
+                "You like peace and quiet"};
+
+            Random rnd = new Random();
+            int value = rnd.Next(0,5);
+
             // Get data here.
             var dataModel = new DataResults
             {
-                
+                Name = model.firstNameInput + " " + model.lastNameInput,
+                Zone = zones[value],
+                Message = messages[value]
             };
 
             return View("Confirmation", dataModel);

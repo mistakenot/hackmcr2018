@@ -12,5 +12,11 @@ namespace web.Models
 
         public float Noise { get; set; } = 0.5f;
 
+        public string Name { get; set; }
+
+        public string Zone { get; set; }
+
+        public string Message { get; set; }
+
     }
 }
