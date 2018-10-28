@@ -27,7 +27,7 @@ namespace web.Controllers
             return View("Register", registerModel);
         }
 
-        public IActionResult Register()
+        public IActionResult Register(RegisterModel model)
         {
             // Get data here.
             var dataModel = new DataResults

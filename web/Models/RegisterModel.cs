@@ -5,5 +5,6 @@ namespace web.Models
         public decimal Price { get; set; }
         public string From { get; set; }
         public string To { get; set; }
+        public string firstNameInput {get;set;}
     }
 }
