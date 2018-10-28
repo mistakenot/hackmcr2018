@@ -32,7 +32,7 @@ namespace web.Controllers
             // Get data here.
             var dataModel = new DataResults
             {
-
+                
             };
 
             return View("Confirmation", dataModel);
